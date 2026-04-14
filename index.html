@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SACRA — Religious Art</title>
+    <meta name="description" content="Two millennia of sacred vision. The most refined collection of Western religious art.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.14/dist/lenis.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════
+     HEADER
+════════════════════════════════════════ -->
+<header id="site-header">
+    <a class="header-logo" href="#">SACRA</a>
+    <nav class="header-nav">
+        <a href="#hs-section">Works</a>
+        <a href="#curatorial-perspective">Collection</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="#contact">Explore →</a>
+</header>
+
+
+<!-- ═══════════════════════════════════════
+     HERO — scroll scrubbing (500vh)
+════════════════════════════════════════ -->
+<section class="video-scroll-section">
+    <div class="sticky-container">
+        <canvas id="hero-canvas"></canvas>
+
+        <div id="hero-overlay">
+            <p class="hero-eyebrow">Art · Faith · Eternity</p>
+            <h1 class="hero-title">
+                <span class="hero-word hero-word--accent">Revelatio</span>
+            </h1>
+            <p class="hero-sub">Duo Millennia Visionis Sacrae.</p>
+            <div class="hero-scroll-cue">
+                <span class="cue-line"></span>
+                <span class="cue-label">SCROLL</span>
+            </div>
+        </div>
+
+        <div id="hero-manifesto">
+            <div class="statement-inner">
+                <h2 class="statement-text js-split">
+                    Sacred art is not decoration.<br>
+                    It is memory that endures centuries.
+                </h2>
+                <p class="statement-body">
+                    From Michelangelo's works to Tiepolo's frescoes, each work carries the weight
+                    of a civilisation. We study these moments with curatorial rigour and a
+                    contemporary eye.
+                </p>
+            </div>
+        </div>
+
+        <div id="loader">
+            <div class="loader-track"><div class="loader-fill" id="loader-fill"></div></div>
+            <p id="loader-text">0%</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     CONTENT
+════════════════════════════════════════ -->
+<main id="content-section">
+
+<!-- ═══════════════════════════════════════
+     CONTENT
+════════════════════════════════════════ -->
+<main id="content-section" class="content--offset">
+
+    <!-- 1. MARQUEE (First element now) -->
+    <div class="marquee-wrap" aria-hidden="true">
+        <div class="marquee-track">
+            <span>Renaissance</span><span class="dot">·</span>
+            <span>Baroque</span><span class="dot">·</span>
+            <span>Gothic</span><span class="dot">·</span>
+            <span>Byzantine</span><span class="dot">·</span>
+            <span>Neoclassical</span><span class="dot">·</span>
+            <span>Mannerism</span><span class="dot">·</span>
+            <span>Romanesque</span><span class="dot">·</span>
+            <!-- Perfect Loop Repeat -->
+            <span>Renaissance</span><span class="dot">·</span>
+            <span>Baroque</span><span class="dot">·</span>
+            <span>Gothic</span><span class="dot">·</span>
+            <span>Byzantine</span><span class="dot">·</span>
+            <span>Neoclassical</span><span class="dot">·</span>
+            <span>Mannerism</span><span class="dot">·</span>
+            <span>Romanesque</span><span class="dot">·</span>
+        </div>
+    </div>
+
+    <!-- 3. GALLERY GRID -->
+    <section class="section-gallery" id="gallery">
+        <div class="gallery-header">
+            <p class="gallery-eyebrow">Main Collection</p>
+            <h2 class="gallery-title js-reveal-title">The Works</h2>
+        </div>
+
+        <div class="gallery-grid">
+            <article class="art-card js-card" style="--delay:0">
+                <div class="card-img-wrap">
+                    <img src="images/art1.png" alt="Baroque fresco with divine figures" loading="lazy">
+                    <div class="card-img-overlay"></div>
+                </div>
+                <div class="card-info">
+                    <span class="card-number">001</span>
+                    <h3 class="card-title">Apotheosis of the Gods</h3>
+                    <p class="card-meta">Baroque Fresco · 17th c.</p>
+                </div>
+            </article>
+
+            <article class="art-card js-card" style="--delay:1">
+                <div class="card-img-wrap">
+                    <img src="images/art2.jpg" alt="Tiepolo ceiling fresco" loading="lazy">
+                    <div class="card-img-overlay"></div>
+                </div>
+                <div class="card-info">
+                    <span class="card-number">002</span>
+                    <h3 class="card-title">Celestial Ascension</h3>
+                    <p class="card-meta">Tiepolo · Rococo · 1740</p>
+                </div>
+            </article>
+
+            <article class="art-card js-card" style="--delay:2">
+                <div class="card-img-wrap">
+                    <img src="images/art3.jpg" alt="Cardinal Scipione Borghese, Bernini bust" loading="lazy">
+                    <div class="card-img-overlay"></div>
+                </div>
+                <div class="card-info">
+                    <span class="card-number">003</span>
+                    <h3 class="card-title">Scipione Borghese</h3>
+                    <p class="card-meta">Bernini · Marble · 1632</p>
+                </div>
+            </article>
+
+            <article class="art-card js-card" style="--delay:3">
+                <div class="card-img-wrap">
+                    <img src="images/art4.jpg" alt="Antique Marble Statue" loading="lazy">
+                    <div class="card-img-overlay"></div>
+                </div>
+                <div class="card-info">
+                    <span class="card-number">004</span>
+                    <h3 class="card-title">Wounded Amazon</h3>
+                    <p class="card-meta">Roman Copy · 1st c. AD</p>
+                </div>
+            </article>
+
+            <article class="art-card js-card" style="--delay:4">
+                <div class="card-img-wrap">
+                    <img src="images/art5.jpg" alt="The Musicians, Caravaggio" loading="lazy">
+                    <div class="card-img-overlay"></div>
+                </div>
+                <div class="card-info">
+                    <span class="card-number">005</span>
+                    <h3 class="card-title">The Musicians</h3>
+                    <p class="card-meta">Caravaggio · oil · 1595</p>
+                </div>
+            </article>
+
+            <article class="art-card js-card" style="--delay:5">
+                <div class="card-img-wrap">
+                    <img src="images/art6.jpg" alt="The Vision of Saint John, El Greco" loading="lazy">
+                    <div class="card-img-overlay"></div>
+                </div>
+                <div class="card-info">
+                    <span class="card-number">006</span>
+                    <h3 class="card-title">Vision of Saint John</h3>
+                    <p class="card-meta">El Greco · 1608</p>
+                </div>
+            </article>
+
+            <article class="art-card js-card" style="--delay:6">
+                <div class="card-img-wrap">
+                    <img src="images/art7.jpg" alt="The Holy Family, Rubens" loading="lazy">
+                    <div class="card-img-overlay"></div>
+                </div>
+                <div class="card-info">
+                    <span class="card-number">007</span>
+                    <h3 class="card-title">The Holy Family</h3>
+                    <p class="card-meta">Peter Paul Rubens · 1630</p>
+                </div>
+            </article>
+
+            <article class="art-card js-card" style="--delay:7">
+                <div class="card-img-wrap">
+                    <img src="images/art8.jpg" alt="Madonna and Child, Duccio" loading="lazy">
+                    <div class="card-img-overlay"></div>
+                </div>
+                <div class="card-info">
+                    <span class="card-number">008</span>
+                    <h3 class="card-title">Madonna and Child</h3>
+                    <p class="card-meta">Duccio di Buoninsegna · 1300</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- 4. STATS -->
+    <section class="section-stats">
+        <div class="stats-grid">
+            <div class="stat-item js-stat">
+                <span class="stat-number" data-target="2000">0</span><span class="stat-suffix">+</span>
+                <p class="stat-label">Years of history</p>
+            </div>
+            <div class="stat-item js-stat">
+                <span class="stat-number" data-target="847">0</span>
+                <p class="stat-label">Catalogued works</p>
+            </div>
+            <div class="stat-item js-stat">
+                <span class="stat-number" data-target="38">0</span>
+                <p class="stat-label">Countries represented</p>
+            </div>
+            <div class="stat-item js-stat">
+                <span class="stat-number" data-target="12">0</span>
+                <p class="stat-label">Artistic schools</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. FULL-BLEED FEATURE -->
+    <section class="section-feature js-feature" id="curatorial-perspective">
+        <div class="feature-img-wrap">
+            <img src="images/art1.png" alt="Baroque fresco detail" class="feature-img js-parallax-img">
+        </div>
+        <div class="feature-text">
+            <p class="feature-eyebrow">Curatorial Perspective</p>
+            <h2 class="feature-headline">
+                The divine expressed<br>in pigment and stone.
+            </h2>
+            <p class="feature-body">
+                Every brushstroke was a prayer. Every chisel mark in marble, an act of faith.
+                We explore the intersection of devotion and technical mastery — where the sacred
+                becomes tangible.
+            </p>
+            <a class="feature-link" href="#">View full collection →</a>
+        </div>
+    </section>
+
+    <!-- 6. HORIZONTAL SCROLL STRIP -->
+    <section class="section-hscroll" id="hs-section">
+        <div class="hscroll-pin">
+            <div class="hscroll-header">
+                <p class="hscroll-label">Browse</p>
+                <div class="hscroll-nav">
+                    <button id="hscroll-prev" class="hscroll-btn-nav" aria-label="Previous">
+                        <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <button id="hscroll-next" class="hscroll-btn-nav" aria-label="Next">
+                        <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                </div>
+            </div>
+            <div class="hscroll-track" id="hscroll-track">
+            <div class="hscroll-item">
+                <img src="images/art1.png" alt="Detail of Italian Baroque Fresco" loading="lazy">
+                <p>Italian Baroque</p>
+            </div>
+            <div class="hscroll-item">
+                <img src="images/art2.jpg" alt="Sacred Sculpture Detail" loading="lazy">
+                <p>Sacred Sculpture</p>
+            </div>
+            <div class="hscroll-item">
+                <img src="images/art3.jpg" alt="Roman Renaissance Bust" loading="lazy">
+                <p>Roman Renaissance</p>
+            </div>
+            <div class="hscroll-item">
+                <img src="images/art4.jpg" alt="Heavenly Frescoes detail" loading="lazy">
+                <p>Heavenly Frescoes</p>
+            </div>
+            <div class="hscroll-item">
+                <img src="images/art5.jpg" alt="The Musicians, Caravaggio" loading="lazy">
+                <p>The Musicians</p>
+            </div>
+            <div class="hscroll-item">
+                <img src="images/art6.jpg" alt="Vision of Saint John, El Greco" loading="lazy">
+                <p>Saint John</p>
+            </div>
+            <div class="hscroll-item">
+                <img src="images/art7.jpg" alt="The Holy Family, Rubens" loading="lazy">
+                <p>Holy Family</p>
+            </div>
+            <div class="hscroll-item">
+                <img src="images/art8.jpg" alt="Madonna and Child, Duccio" loading="lazy">
+                <p>Madonna</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- 7. CONTACT / CTA -->
+    <section class="section-contact" id="contact">
+        <div class="contact-inner">
+            <p class="contact-eyebrow">Access the collection</p>
+            <h2 class="contact-headline js-reveal-title">
+                Begin your<br>exploration now.
+            </h2>
+            <a class="contact-btn" href="mailto:contact@sacra.art">Get in touch</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <span class="footer-logo">SACRA</span>
+        <p class="footer-copy">© 2025 Sacra Art. Art beyond time.</p>
+        <nav class="footer-nav">
+            <a href="#">Instagram</a>
+            <a href="#">Terms</a>
+        </nav>
+    </footer>
+
+</main>
+<div id="lightbox" class="lightbox" aria-hidden="true">
+    <div class="lightbox-overlay"></div>
+    <button id="lightbox-close" class="lightbox-btn close" aria-label="Close">&times;</button>
+    <button id="lightbox-prev" class="lightbox-btn prev" aria-label="Previous image">&#x2190;</button>
+    <button id="lightbox-next" class="lightbox-btn next" aria-label="Next image">&#x2192;</button>
+    <div class="lightbox-content">
+        <img id="lightbox-img" src="" alt="Full view">
+        <div class="lightbox-meta">
+            <h3 id="lightbox-title"></h3>
+            <p id="lightbox-desc"></p>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

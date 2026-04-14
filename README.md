@@ -1,6 +1,3 @@
-![2026-04-14 01-54-06](https://github.com/user-attachments/assets/f665c3e2-3b1c-438f-80a2-8dbf43e22205)
-
-
 # SACRA — Religious Art Experience
 
 **SACRA** is a high-end, minimalist web experience dedicated to the preservation and exploration of two millennia of sacred Western art. Designed with a global museum aesthetic, the platform combines cinematic smooth scrolling, interactive 3D elements, and immersive focal transitions to create a contemplative digital sanctuary.

@@ -26,6 +26,8 @@
 
 ---
 
+<img width="1905" height="950" alt="image" src="https://github.com/user-attachments/assets/870aab0e-c996-4cd4-8f22-5e6a55137f71" />
+
 ## Technology Stack
 
 *   **Logic**: [Vanilla JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)

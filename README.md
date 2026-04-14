@@ -27,6 +27,7 @@
 ---
 
 <img width="1905" height="950" alt="image" src="https://github.com/user-attachments/assets/870aab0e-c996-4cd4-8f22-5e6a55137f71" />
+<img width="1903" height="948" alt="image" src="https://github.com/user-attachments/assets/5e85404e-efc4-45ca-841a-a5b71648084b" />
 
 ## Technology Stack
 

@@ -8,7 +8,6 @@ https://rvvviana.github.io/sacra-art-webmuseum/
 
 ![2026-04-14 01-54-06](https://github.com/user-attachments/assets/f665c3e2-3b1c-438f-80a2-8dbf43e22205)
 
-**Animation preview
 ---
 
 ## Key Features
